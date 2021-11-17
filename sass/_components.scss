@@ -1,0 +1,131 @@
+// HEADINGS
+
+.title-alternate {
+  font-family: $ff-display;
+  font-size: 9.375rem;
+  line-height: 4.5rem;
+  font-weight: 900;
+  text-transform: lowercase;
+  color: $color-grey;
+}
+
+.heading-1 {
+  font-family: $ff-display;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+
+.heading-2 {
+  font-family: $ff-display;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  font-weight: 900;
+}
+
+.heading-3 {
+  font-family: $ff-display;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 900;
+}
+
+.heading-4 {
+  font-family: $ff-display;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.body-text {
+  font-family: $ff-body;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 400;
+}
+
+// MEDIA QUERIES HEADINGS
+
+@media only screen and (max-width: 44.9999rem) {
+  .title-alternate {
+    font-size: 6rem;
+    line-height: 4.5rem;
+  }
+
+  .heading-1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .heading-2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .heading-3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .heading-4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .body-text {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+}
+
+// MEDIA QUERIES HEADINGS MOBILE
+@media only screen and (max-width: 34.9999rem) {
+  .title-alternate {
+    font-size: 2.5rem;
+    line-height: 4.5rem;
+  }
+
+  .heading-1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .heading-2 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  .heading-3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .heading-4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .body-text {
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+}
+
+.btn-main {
+  font-family: $ff-display;
+  font-size: 1.125rem;
+  line-height: 1.5625rem;
+  color: $color-cream-light;
+  background-color: $color-cyan-dark;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-main:hover {
+  background-color: $color-cyan-light;
+}
+
+.btn-main:disabled {
+  background-color: $color-grey;
+}
+
+@media only screen and (max-width: 44.999) {
+}

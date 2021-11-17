@@ -1,0 +1,22 @@
+{
+  "name": "coffeeroasters-site-fem",
+  "version": "1.0.0",
+  "description": "Multi-page website for Coffeeroasters subscription",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btaylor13/coffeeroasters-subscriptionFEM.git"
+  },
+  "author": "Bridgett Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btaylor13/coffeeroasters-subscriptionFEM/issues"
+  },
+  "homepage": "https://github.com/btaylor13/coffeeroasters-subscriptionFEM#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

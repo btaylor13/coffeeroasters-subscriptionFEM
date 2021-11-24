@@ -78,8 +78,8 @@
       }
 
       &-text-content {
-        padding: 4.2rem 1.7rem;
-        width: 98%;
+        padding: 4.2rem 0.4rem;
+        width: 100%;
         text-align: center;
       }
     }
@@ -90,17 +90,27 @@
 
 .collection {
   text-align: center;
+  margin-top: 7rem;
   &__heading--main {
   }
 
   &__items-container {
+    display: flex;
+    margin-bottom: 7rem;
+    column-gap: 1.5em;
+    width: 86%;
+    margin-inline: auto;
   }
 
   &__item {
     color: $color-bluegrey-dark;
+
     &-image {
+      max-height: 11.9rem;
+      margin-bottom: 3rem;
     }
     &-heading {
+      margin-bottom: 1rem;
     }
     &-description {
     }
@@ -109,18 +119,29 @@
 
 // COLLECTION MEDIA QUERIES TABLET
 
-@media only screen and (max-width: 46rem) {
+@media only screen and (max-width: 48rem) {
   .collection {
     text-align: center;
     &__heading--main {
     }
 
     &__items-container {
+      flex-direction: column;
     }
 
     &__item {
       color: $color-bluegrey-dark;
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+
+      &-text {
+        text-align: start;
+        margin-top: 1.3rem;
+        align-self: start;
+      }
       &-image {
+        margin-bottom: 0;
       }
       &-heading {
       }
@@ -143,7 +164,17 @@
 
     &__item {
       color: $color-bluegrey-dark;
+      margin-bottom: 4rem;
+      flex-direction: column;
+      align-items: center;
+
       &-image {
+        margin-bottom: 0.8rem;
+        max-height: 9.4rem;
+      }
+
+      &-text {
+        text-align: center;
       }
       &-heading {
       }

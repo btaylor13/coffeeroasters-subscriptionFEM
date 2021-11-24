@@ -217,3 +217,18 @@ body {
         max-height: 9.4rem; }
       .collection__item-text {
         text-align: center; } }
+
+.why {
+  text-align: center;
+  margin-bottom: 6rem; }
+
+.how {
+  margin-bottom: 7rem; }
+
+@media only screen and (max-width: 46rem) {
+  .how {
+    margin-bottom: 7rem; } }
+
+@media only screen and (max-width: 35rem) {
+  .how {
+    margin-bottom: 7rem; } }

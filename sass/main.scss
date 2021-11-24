@@ -1,0 +1,160 @@
+@import "base";
+@import "variables";
+@import "components";
+@import "utilities";
+
+// Header Section
+.header {
+  &__logo-container {
+  }
+
+  &__logo {
+  }
+  // Navigation
+  &__nav {
+    &-menu {
+    }
+    &-item {
+    }
+    &-link {
+    }
+  }
+
+  // Intro Section
+  &__intro {
+    &--home {
+      border-radius: 0.625rem;
+      background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-text-content {
+      padding: 4.2rem 2.8rem;
+      width: 60%;
+    }
+
+    &-heading-1 {
+      color: $color-cream-light;
+    }
+
+    &-description {
+      color: $color-cream-light;
+    }
+
+    &-btn-container {
+      margin-bottom: 1.3rem;
+    }
+  }
+}
+
+// Header Section Media Queries - Tablet
+
+@media only screen and (max-width: 46rem) {
+  .header {
+    // Navigation Media Queries
+    // Intro Section Media Queries
+    &__intro {
+      &--home {
+        background-image: url(../assets/home/tablet/image-hero-coffeepress.jpg);
+      }
+
+      &-text-content {
+        padding: 4.2rem 2.8rem;
+        width: 75%;
+      }
+    }
+  }
+}
+
+// Header Section Media Queries - Mobile
+@media only screen and (max-width: 34.9rem) {
+  .header {
+    // Navigation Media Queries
+    // Intro Section Media Queries
+    &__intro {
+      &--home {
+        background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
+      }
+
+      &-text-content {
+        padding: 4.2rem 1.7rem;
+        width: 98%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Collection Section
+
+.collection {
+  text-align: center;
+  &__heading--main {
+  }
+
+  &__items-container {
+  }
+
+  &__item {
+    color: $color-bluegrey-dark;
+    &-image {
+    }
+    &-heading {
+    }
+    &-description {
+    }
+  }
+}
+
+// COLLECTION MEDIA QUERIES TABLET
+
+@media only screen and (max-width: 46rem) {
+  .collection {
+    text-align: center;
+    &__heading--main {
+    }
+
+    &__items-container {
+    }
+
+    &__item {
+      color: $color-bluegrey-dark;
+      &-image {
+      }
+      &-heading {
+      }
+      &-description {
+      }
+    }
+  }
+}
+
+// COLLECTION MEDIA QUERIES MOBILE
+
+@media only screen and (max-width: 34.9rem) {
+  .collection {
+    text-align: center;
+    &__heading--main {
+    }
+
+    &__items-container {
+    }
+
+    &__item {
+      color: $color-bluegrey-dark;
+      &-image {
+      }
+      &-heading {
+      }
+      &-description {
+      }
+    }
+  }
+}
+
+// WHY CHOOSE US SECTION
+
+// WHY CHOOSE US MEDIA QUERIES TABLET
+
+// WHY CHOOSE US MEDIA QUERIES MOBILE

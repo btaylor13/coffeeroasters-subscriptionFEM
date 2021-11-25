@@ -1,22 +1,45 @@
 // FOOTER SECTION
 
 .footer {
+  background-color: #2c343e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 2.5rem;
+  padding-inline: 3rem;
   &__navigation {
+    display: flex;
   }
 
   &__logo-container {
   }
 
   &__logo {
+    height: 1.625rem;
   }
 
   &__nav-menu {
+    list-style: none;
+    display: flex;
   }
 
   &__nav-item {
   }
 
   &__nav-link {
+    font-family: $ff-body;
+    font-weight: bold;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.92px;
+    line-height: 0.9375rem;
+    text-decoration: none;
+    color: $color-grey;
+  }
+
+  &__nav-link:hover {
+    color: $color-cream-light;
+    transition: all 0.3s;
   }
   &__social {
     &-link {
@@ -27,5 +50,81 @@
 }
 
 // FOOTER SECTION MEDIA QUERIES TABLET
+
+@media only screen and (max-width: 46rem) {
+  .footer {
+    background-color: #2c343e;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+    flex-direction: column;
+
+    &__navigation {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &__logo-container {
+    }
+
+    &__logo {
+      height: 1.625rem;
+    }
+
+    &__nav-menu {
+      column-gap: 1.3rem;
+    }
+
+    &__nav-item {
+    }
+
+    &__nav-link {
+    }
+    &__social {
+      &-link {
+      }
+      &-icon {
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 35rem) {
+  .footer {
+    background-color: #2c343e;
+    display: flex;
+    &__navigation {
+      display: flex;
+    }
+
+    &__logo-container {
+    }
+
+    &__logo {
+      height: 1.625rem;
+    }
+
+    &__nav-menu {
+      flex-direction: column;
+      padding: 2.2rem 0 1.2rem 0;
+    }
+
+    &__nav-item {
+      margin-bottom: 1rem;
+    }
+
+    &__nav-link {
+    }
+    &__social {
+      &-link {
+      }
+      &-icon {
+      }
+    }
+  }
+}
 
 // FOOTER SETION MEDIA QUERIES TABLET

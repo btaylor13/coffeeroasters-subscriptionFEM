@@ -156,6 +156,17 @@ body {
       color: #343e4c;
       transition: all 0.3s; }
 
+.header__hamburger {
+  display: none; }
+  .header__hamburger-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010; }
+
 .header__intro--home {
   border-radius: 0.625rem;
   background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
@@ -188,7 +199,56 @@ body {
   .header__intro-text-content {
     padding: 4.2rem 0.4rem;
     width: 100%;
-    text-align: center; } }
+    text-align: center; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.3rem; }
+    .header__nav-menu {
+      position: fixed;
+      right: -100%;
+      top: 4.45rem;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 0.625rem;
+      text-align: center;
+      transition: all 0.5s;
+      margin-left: auto;
+      margin-right: auto;
+      width: 87%;
+      padding-top: 1rem;
+      padding-bottom: 11.3rem; }
+      .header__nav-menu.active {
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, 0); }
+    .header__nav-item {
+      margin: 1.1rem 0; }
+    .header__nav-item + .header__nav-item {
+      margin-left: 0; }
+    .header__nav-link {
+      color: #343e4c; }
+      .header__nav-link:hover {
+        color: #848990;
+        transition: all 0.3s; }
+  .header__hamburger {
+    display: block;
+    cursor: pointer; }
+    .header__hamburger-bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #101010; }
+    .header__hamburger.active .header__hamburger-bar:nth-child(2) {
+      opacity: 0; }
+    .header__hamburger.active .header__hamburger-bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg); }
+    .header__hamburger.active .header__hamburger-bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg); } }
 
 .collection {
   text-align: center;

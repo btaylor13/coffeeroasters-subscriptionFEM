@@ -50,7 +50,8 @@ body {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.92px;
-  line-height: 0.9375rem; }
+  line-height: 0.9375rem;
+  text-decoration: none; }
 
 @media only screen and (max-width: 44.9999rem) {
   .title-alternate {
@@ -135,6 +136,25 @@ body {
 
 .mb-5 {
   margin-bottom: 5rem; }
+
+.header__logo {
+  max-height: 1.5rem; }
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.3rem; }
+  .header__nav-menu {
+    list-style: none;
+    display: flex; }
+  .header__nav-item + .header__nav-item {
+    margin-left: 2rem; }
+  .header__nav-link {
+    color: #848990; }
+    .header__nav-link:hover {
+      color: #343e4c;
+      transition: all 0.3s; }
 
 .header__intro--home {
   border-radius: 0.625rem;

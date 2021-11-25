@@ -9,14 +9,29 @@
   }
 
   &__logo {
+    max-height: 1.5rem;
   }
   // Navigation
   &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.3rem;
     &-menu {
+      list-style: none;
+      display: flex;
     }
     &-item {
     }
+    &-item + &-item {
+      margin-left: 2rem;
+    }
     &-link {
+      color: $color-grey;
+      &:hover {
+        color: $color-bluegrey-dark;
+        transition: all 0.3s;
+      }
     }
   }
 

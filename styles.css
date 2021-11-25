@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #fefcf6; }
 
 .title-alternate {
   font-family: "Fraunces", serif;
@@ -300,7 +301,38 @@ body {
 
 .why {
   text-align: center;
-  margin-bottom: 6rem; }
+  margin-bottom: 6rem;
+  background-color: #2c343e;
+  color: #fefcf6;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .why__items-container {
+    display: flex;
+    column-gap: 1.1rem; }
+  .why__item {
+    background-color: #0e8684;
+    border-radius: 0.625rem;
+    max-width: 21rem; }
+
+@media only screen and (max-width: 46rem) {
+  .why__items-container {
+    flex-direction: column; }
+  .why__item {
+    max-width: 35rem;
+    display: flex;
+    padding: 2rem;
+    column-gap: 2rem;
+    margin-bottom: 1.5rem; }
+    .why__item-icon--bean {
+      max-height: 3.5rem; }
+    .why__item-icon--gift {
+      max-height: 3.5rem; }
+    .why__item-icon--truck {
+      max-height: 2.4375rem; }
+    .why__item-text {
+      text-align: start; } }
 
 .how {
   margin-bottom: 7rem; }

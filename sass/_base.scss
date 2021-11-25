@@ -1,3 +1,4 @@
+@import "variables";
 *,
 *::after,
 *::before {
@@ -8,4 +9,5 @@
 
 body {
   box-sizing: border-box;
+  background-color: $color-cream-light;
 }

@@ -1,0 +1,178 @@
+// Header Section
+.header {
+  &__logo-container {
+  }
+
+  &__logo {
+    max-height: 1.5rem;
+  }
+  // Navigation
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.3rem;
+    &-menu {
+      list-style: none;
+      display: flex;
+    }
+    &-item {
+    }
+    &-item + &-item {
+      margin-left: 2rem;
+    }
+    &-link {
+      color: $color-grey;
+      &:hover {
+        color: $color-bluegrey-dark;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    &-bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: #101010;
+    }
+  }
+
+  // Intro Section
+  &__intro {
+    &--home {
+      border-radius: 0.625rem;
+      background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &-text-content {
+      padding: 4.2rem 2.8rem;
+      width: 60%;
+    }
+
+    &-heading-1 {
+      color: $color-cream-light;
+    }
+
+    &-description {
+      color: $color-cream-light;
+    }
+
+    &-btn-container {
+      margin-bottom: 1.3rem;
+    }
+  }
+}
+
+// Header Section Media Queries - Tablet
+
+@media only screen and (max-width: 46rem) {
+  .header {
+    // Navigation Media Queries
+    // Intro Section Media Queries
+    &__intro {
+      &--home {
+        background-image: url(../assets/home/tablet/image-hero-coffeepress.jpg);
+      }
+
+      &-text-content {
+        padding: 4.2rem 2.8rem;
+        width: 75%;
+      }
+    }
+  }
+}
+
+// Header Section Media Queries - Mobile
+@media only screen and (max-width: 34.9rem) {
+  .header {
+    // Navigation Media Queries
+    // Intro Section Media Queries
+    &__intro {
+      &--home {
+        background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
+      }
+
+      &-text-content {
+        padding: 4.2rem 0.4rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 1.3rem;
+      &-menu {
+        position: fixed;
+        right: -100%;
+        top: 4.45rem;
+        flex-direction: column;
+        // add linear gradient to background color
+        background-color: #fff;
+
+        border-radius: 0.625rem;
+        text-align: center;
+        transition: all 0.5s;
+        margin-left: auto;
+        margin-right: auto;
+        width: 87%;
+        padding-top: 1rem;
+        padding-bottom: 11.3rem;
+
+        &.active {
+          right: 0;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+      }
+      &-item {
+        margin: 1.1rem 0;
+      }
+      &-item + &-item {
+        margin-left: 0;
+      }
+      &-link {
+        color: $color-bluegrey-dark;
+
+        &:hover {
+          color: $color-grey;
+          transition: all 0.3s;
+        }
+      }
+    }
+
+    &__hamburger {
+      display: block;
+      cursor: pointer;
+      &-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
+      }
+
+      &.active &-bar:nth-child(2) {
+        opacity: 0;
+      }
+      &.active &-bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      &.active &-bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }
+}

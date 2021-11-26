@@ -1,0 +1,107 @@
+// HOW IT WORKS SECTION
+// THIS SECTION IS SEEN ON BOTH THE HOME PAGE AND THE CREATE YOUR PLAN PAGE
+// MAKE STYLE CLASSES GENERAL ENOUGH THAT YOU CAN USE IT ON BOTH PAGES BUT MODIFIER CLASSES FOR THINGS THAT DIFFER ON THE CREATE YOUR PLAN PAGE
+
+// HOW IT WORKS DESKTOP
+.how {
+  &__heading {
+    color: $color-grey;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  &__line-decor {
+  }
+  &__steps-container {
+    display: flex;
+    column-gap: 3.5rem;
+  }
+  &__item {
+    &-number {
+      color: $color-orange-pale;
+      font-family: $ff-display;
+      font-size: 4.5rem;
+      font-weight: 900;
+    }
+
+    &-heading {
+      color: $color-bluegrey-dark;
+      margin-bottom: 2rem;
+      &--plan {
+        color: $color-cream-light;
+      }
+    }
+
+    &-description {
+      color: $color-bluegrey-dark;
+      &--plan {
+        color: $color-cream-light;
+      }
+    }
+  }
+
+  &__btn-container {
+    margin-block: 3.9rem;
+  }
+  &__btn {
+  }
+}
+// HOW IT WORKS MEDIA QUERIES TABLET
+
+@media only screen and (max-width: 46rem) {
+  .how {
+    &__heading {
+    }
+    &__line-decor {
+    }
+    &__steps-container {
+      column-gap: 2rem;
+    }
+    &__item {
+      &-number {
+        font-size: 4.5rem;
+      }
+
+      &-heading {
+      }
+
+      &-description {
+      }
+    }
+    &__btn {
+    }
+  }
+}
+
+// HOW IT WORKS MEDIA QUERIES MOBILE
+@media only screen and (max-width: 35rem) {
+  .how {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    &__heading {
+      text-align: center;
+    }
+    &__line-decor {
+    }
+    &__steps-container {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 3rem;
+    }
+    &__item {
+      &-number {
+        font-size: 4.5rem;
+      }
+
+      &-heading {
+      }
+
+      &-description {
+      }
+    }
+    &__btn {
+    }
+  }
+}

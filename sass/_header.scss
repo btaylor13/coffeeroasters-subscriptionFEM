@@ -139,7 +139,10 @@
         top: 4.45rem;
         flex-direction: column;
         // add linear gradient to background color
-        background-color: #fff;
+        background-image: linear-gradient(
+          $color-cream-light 60%,
+          hsla(0, 0%, 64%, 0.7)
+        );
 
         border-radius: 0.625rem;
         text-align: center;

@@ -6,9 +6,12 @@
   align-items: center;
   justify-content: space-between;
   padding-block: 2.5rem;
-  padding-inline: 3rem;
+  padding-inline: 4rem;
+  margin-bottom: 3rem;
   &__navigation {
     display: flex;
+    align-items: center;
+    column-gap: 5rem;
   }
 
   &__logo-container {
@@ -21,6 +24,7 @@
   &__nav-menu {
     list-style: none;
     display: flex;
+    column-gap: 2rem;
   }
 
   &__nav-item {
@@ -42,9 +46,17 @@
     transition: all 0.3s;
   }
   &__social {
+    display: flex;
+
+    column-gap: 1.3rem;
+
     &-link {
     }
     &-icon {
+      &:hover {
+        filter: invert(10%) brightness(0.8) saturate(0.8) sepia(190%)
+          grayscale(30%);
+      }
     }
   }
 }
@@ -72,10 +84,11 @@
 
     &__logo {
       height: 1.625rem;
+      margin-bottom: 1.3rem;
     }
 
     &__nav-menu {
-      column-gap: 1.3rem;
+      margin-bottom: 3rem;
     }
 
     &__nav-item {
@@ -92,6 +105,7 @@
   }
 }
 
+// FOOTER SECTION MEDIA QUERIES MOBILE
 @media only screen and (max-width: 35rem) {
   .footer {
     background-color: #2c343e;
@@ -109,7 +123,7 @@
 
     &__nav-menu {
       flex-direction: column;
-      padding: 2.2rem 0 1.2rem 0;
+      padding: 2.2rem 0 0 0;
     }
 
     &__nav-item {
@@ -126,5 +140,3 @@
     }
   }
 }
-
-// FOOTER SETION MEDIA QUERIES TABLET

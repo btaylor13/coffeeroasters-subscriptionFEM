@@ -4,6 +4,9 @@
   text-align: center;
   margin-top: 7rem;
   &__heading--main {
+    background: linear-gradient(to bottom, $color-grey, $color-cream-light);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   &__items-container {

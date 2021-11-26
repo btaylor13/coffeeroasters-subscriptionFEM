@@ -45,11 +45,20 @@
 
   // Intro Section
   &__intro {
+    background-size: cover;
+    background-repeat: no-repeat;
     &--home {
       border-radius: 0.625rem;
       background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
       background-size: cover;
       background-repeat: no-repeat;
+    }
+
+    &--about {
+      background-image: url(../assets/about/desktop/image-hero-whitecup.jpg);
+    }
+    &--plan {
+      background-image: url(../assets/plan/desktop/image-hero-blackcup.jpg);
     }
 
     &-text-content {
@@ -81,6 +90,12 @@
       &--home {
         background-image: url(../assets/home/tablet/image-hero-coffeepress.jpg);
       }
+      &--about {
+        background-image: url(../assets/about/tablet/image-hero-whitecup.jpg);
+      }
+      &--plan {
+        background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg);
+      }
 
       &-text-content {
         padding: 4.2rem 2.8rem;
@@ -98,6 +113,12 @@
     &__intro {
       &--home {
         background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg);
+      }
+      &--about {
+        background-image: url(../assets/about/mobile/image-hero-whitecup.jpg);
+      }
+      &--plan {
+        background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg);
       }
 
       &-text-content {

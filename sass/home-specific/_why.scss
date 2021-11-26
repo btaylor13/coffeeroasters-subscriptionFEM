@@ -2,30 +2,48 @@
 
 .why {
   text-align: center;
-  margin-bottom: 6rem;
-  background-color: #2c343e;
+  margin-bottom: 7rem;
   color: $color-cream-light;
-  border-radius: 0.625rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__heading {
-  }
 
-  &__description {
+  &__intro {
+    background-color: #2c343e;
+    border-radius: 0.625rem;
+    padding: 4rem 0 14rem 0;
+    &-heading {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+
+    &-description {
+      width: 70%;
+      margin: 0 auto;
+    }
   }
 
   &__items-container {
     display: flex;
     column-gap: 1.1rem;
+    margin-top: -10rem;
   }
   &__item {
     background-color: $color-cyan-dark;
     border-radius: 0.625rem;
     max-width: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2.5rem 4rem 2.5rem;
     &-icon {
+      margin-bottom: 2.5rem;
     }
     &-heading {
+      margin-bottom: 1rem;
     }
     &-description {
     }
@@ -35,23 +53,32 @@
 // WHY CHOOSE US MEDIA QUERIES TABLET
 @media only screen and (max-width: 46rem) {
   .why {
-    &__heading {
-    }
+    &__intro {
+      padding-bottom: 23rem;
+      &__heading {
+      }
 
-    &__description {
+      &__description {
+      }
     }
 
     &__items-container {
       flex-direction: column;
+      margin-top: -18rem;
     }
     &__item {
       max-width: 35rem;
-      display: flex;
-      padding: 2rem;
-      column-gap: 2rem;
+
+      padding: 2.5rem;
+      column-gap: 3rem;
       margin-bottom: 1.5rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
 
       &-icon {
+        margin-bottom: 0;
+        padding-left: 1rem;
         &--bean {
           max-height: 3.5rem;
         }
@@ -77,16 +104,31 @@
 // WHY CHOOSE US MEDIA QUERIES MOBILE
 @media only screen and (max-width: 35rem) {
   .why {
-    &__heading {
-    }
+    &__intro {
+      padding-bottom: 39rem;
+      &__heading {
+      }
 
-    &__description {
+      &__description {
+      }
     }
 
     &__items-container {
+      text-align: center;
+      padding: 2rem 1rem 10rem 1rem;
+      margin-top: -37rem;
     }
+
     &__item {
+      flex-direction: column;
+
+      &-text {
+        text-align: center;
+      }
       &-icon {
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        padding-left: 0;
       }
       &-heading {
       }

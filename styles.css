@@ -11,11 +11,12 @@ body {
 
 .title-alternate {
   font-family: "Fraunces", serif;
-  font-size: 9.375rem;
-  line-height: 4.5rem;
+  font-size: 9rem;
+  line-height: 6rem;
   font-weight: 900;
   text-transform: lowercase;
-  color: #848990; }
+  color: #848990;
+  padding-top: 2rem; }
 
 .heading-1 {
   font-family: "Fraunces", serif;
@@ -54,10 +55,10 @@ body {
   line-height: 0.9375rem;
   text-decoration: none; }
 
-@media only screen and (max-width: 44.9999rem) {
+@media only screen and (max-width: 46rem) {
   .title-alternate {
-    font-size: 6rem;
-    line-height: 4.5rem; }
+    font-size: 5.1rem;
+    margin-bottom: -1.5rem; }
   .heading-1 {
     font-size: 3rem;
     line-height: 3rem; }
@@ -77,7 +78,8 @@ body {
 @media only screen and (max-width: 34.9999rem) {
   .title-alternate {
     font-size: 2.5rem;
-    line-height: 4.5rem; }
+    line-height: 4.5rem;
+    margin-bottom: 1rem; }
   .heading-1 {
     font-size: 2.5rem;
     line-height: 2.5rem; }
@@ -113,7 +115,8 @@ body {
   padding: 0.7em 1.4em; }
 
 .btn-main:hover {
-  background-color: #65d2d0; }
+  background-color: #65d2d0;
+  transition: all 0.3s ease-in-out; }
 
 .btn-main:disabled {
   background-color: #848990; }
@@ -168,28 +171,35 @@ body {
     transition: all 0.3s ease-in-out;
     background-color: #101010; }
 
-.header__intro--home {
-  border-radius: 0.625rem;
-  background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+.header__intro {
   background-size: cover;
   background-repeat: no-repeat; }
-
-.header__intro-text-content {
-  padding: 4.2rem 2.8rem;
-  width: 60%; }
-
-.header__intro-heading-1 {
-  color: #fefcf6; }
-
-.header__intro-description {
-  color: #fefcf6; }
-
-.header__intro-btn-container {
-  margin-bottom: 1.3rem; }
+  .header__intro--home {
+    border-radius: 0.625rem;
+    background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .header__intro--about {
+    background-image: url(../assets/about/desktop/image-hero-whitecup.jpg); }
+  .header__intro--plan {
+    background-image: url(../assets/plan/desktop/image-hero-blackcup.jpg); }
+  .header__intro-text-content {
+    padding: 4.2rem 2.8rem;
+    width: 60%; }
+  .header__intro-heading-1 {
+    color: #fefcf6; }
+  .header__intro-description {
+    color: #fefcf6; }
+  .header__intro-btn-container {
+    margin-bottom: 1.3rem; }
 
 @media only screen and (max-width: 46rem) {
   .header__intro--home {
     background-image: url(../assets/home/tablet/image-hero-coffeepress.jpg); }
+  .header__intro--about {
+    background-image: url(../assets/about/tablet/image-hero-whitecup.jpg); }
+  .header__intro--plan {
+    background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg); }
   .header__intro-text-content {
     padding: 4.2rem 2.8rem;
     width: 75%; } }
@@ -197,6 +207,10 @@ body {
 @media only screen and (max-width: 34.9rem) {
   .header__intro--home {
     background-image: url(../assets/home/mobile/image-hero-coffeepress.jpg); }
+  .header__intro--about {
+    background-image: url(../assets/about/mobile/image-hero-whitecup.jpg); }
+  .header__intro--plan {
+    background-image: url(../assets/plan/mobile/image-hero-blackcup.jpg); }
   .header__intro-text-content {
     padding: 4.2rem 0.4rem;
     width: 100%;
@@ -312,6 +326,10 @@ body {
 .collection {
   text-align: center;
   margin-top: 7rem; }
+  .collection__heading--main {
+    background: linear-gradient(to bottom, #848990, #fefcf6);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
   .collection__items-container {
     display: flex;
     margin-bottom: 7rem;
@@ -359,38 +377,81 @@ body {
 
 .why {
   text-align: center;
-  margin-bottom: 6rem;
-  background-color: #2c343e;
+  margin-bottom: 7rem;
   color: #fefcf6;
-  border-radius: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .why__intro {
+    background-color: #2c343e;
+    border-radius: 0.625rem;
+    padding: 4rem 0 14rem 0; }
+    .why__intro-heading {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 1rem; }
+    .why__intro-description {
+      width: 70%;
+      margin: 0 auto; }
   .why__items-container {
     display: flex;
-    column-gap: 1.1rem; }
+    column-gap: 1.1rem;
+    margin-top: -10rem; }
   .why__item {
     background-color: #0e8684;
     border-radius: 0.625rem;
-    max-width: 21rem; }
+    max-width: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2.5rem 4rem 2.5rem; }
+    .why__item-icon {
+      margin-bottom: 2.5rem; }
+    .why__item-heading {
+      margin-bottom: 1rem; }
 
 @media only screen and (max-width: 46rem) {
+  .why__intro {
+    padding-bottom: 23rem; }
   .why__items-container {
-    flex-direction: column; }
+    flex-direction: column;
+    margin-top: -18rem; }
   .why__item {
     max-width: 35rem;
-    display: flex;
-    padding: 2rem;
-    column-gap: 2rem;
-    margin-bottom: 1.5rem; }
-    .why__item-icon--bean {
-      max-height: 3.5rem; }
-    .why__item-icon--gift {
-      max-height: 3.5rem; }
-    .why__item-icon--truck {
-      max-height: 2.4375rem; }
+    padding: 2.5rem;
+    column-gap: 3rem;
+    margin-bottom: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .why__item-icon {
+      margin-bottom: 0;
+      padding-left: 1rem; }
+      .why__item-icon--bean {
+        max-height: 3.5rem; }
+      .why__item-icon--gift {
+        max-height: 3.5rem; }
+      .why__item-icon--truck {
+        max-height: 2.4375rem; }
     .why__item-text {
       text-align: start; } }
+
+@media only screen and (max-width: 35rem) {
+  .why__intro {
+    padding-bottom: 39rem; }
+  .why__items-container {
+    text-align: center;
+    padding: 2rem 1rem 10rem 1rem;
+    margin-top: -37rem; }
+  .why__item {
+    flex-direction: column; }
+    .why__item-text {
+      text-align: center; }
+    .why__item-icon {
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+      padding-left: 0; } }
 
 .how {
   margin-bottom: 7rem; }

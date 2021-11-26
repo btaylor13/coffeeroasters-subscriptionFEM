@@ -2,11 +2,12 @@
 
 .title-alternate {
   font-family: $ff-display;
-  font-size: 9.375rem;
-  line-height: 4.5rem;
+  font-size: 9rem;
+  line-height: 6rem;
   font-weight: 900;
   text-transform: lowercase;
   color: $color-grey;
+  padding-top: 2rem;
 }
 
 .heading-1 {
@@ -54,10 +55,10 @@
 
 // MEDIA QUERIES HEADINGS
 
-@media only screen and (max-width: 44.9999rem) {
+@media only screen and (max-width: 46rem) {
   .title-alternate {
-    font-size: 6rem;
-    line-height: 4.5rem;
+    font-size: 5.1rem;
+    margin-bottom: -1.5rem;
   }
 
   .heading-1 {
@@ -91,6 +92,7 @@
   .title-alternate {
     font-size: 2.5rem;
     line-height: 4.5rem;
+    margin-bottom: 1rem;
   }
 
   .heading-1 {
@@ -142,6 +144,7 @@
 
 .btn-main:hover {
   background-color: $color-cyan-light;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-main:disabled {

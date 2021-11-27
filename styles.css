@@ -173,9 +173,9 @@ body {
 
 .header__intro {
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  border-radius: 0.625rem; }
   .header__intro--home {
-    border-radius: 0.625rem;
     background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
     background-size: cover;
     background-repeat: no-repeat; }
@@ -186,8 +186,14 @@ body {
   .header__intro-text-content {
     padding: 4.2rem 2.8rem;
     width: 60%; }
+    .header__intro-text-content--about {
+      max-width: 31rem;
+      width: 100%;
+      padding: 6.5rem 0 7rem 4.5rem; }
   .header__intro-heading-1 {
     color: #fefcf6; }
+    .header__intro-heading-1--about {
+      margin-bottom: 1.9rem; }
   .header__intro-description {
     color: #fefcf6; }
   .header__intro-btn-container {
@@ -202,7 +208,9 @@ body {
     background-image: url(../assets/plan/tablet/image-hero-blackcup.jpg); }
   .header__intro-text-content {
     padding: 4.2rem 2.8rem;
-    width: 75%; } }
+    width: 75%; }
+    .header__intro-text-content--about {
+      width: 71%; } }
 
 @media only screen and (max-width: 34.9rem) {
   .header__intro--home {
@@ -215,6 +223,9 @@ body {
     padding: 4.2rem 0.4rem;
     width: 100%;
     text-align: center; }
+    .header__intro-text-content--about {
+      width: 90%;
+      margin: 0 auto; }
   .header__nav {
     display: flex;
     justify-content: space-between;
@@ -538,6 +549,61 @@ body {
       padding-right: 0; }
       .how__item-number {
         font-size: 4.5rem; } }
+
+.commitment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-column-gap: 3rem;
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  .commitment__image {
+    border-radius: 10px;
+    max-height: 32.5rem; }
+  .commitment__text {
+    color: #343e4c; }
+  .commitment__heading {
+    margin-bottom: 1.5rem; }
+
+@media only screen and (max-width: 46rem) {
+  .commitment__image {
+    max-height: 29.375rem; }
+  .commitment__text {
+    color: #343e4c; } }
+
+@media only screen and (max-width: 36rem) {
+  .commitment {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center; }
+    .commitment__picture {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .commitment__image {
+      max-height: 25rem; }
+    .commitment__text {
+      color: #343e4c;
+      text-align: center; }
+    .commitment__heading {
+      margin-block: 2.3rem; } }
+
+.uncompromising__text {
+  color: #fefcf6;
+  border-radius: 10px;
+  background-color: #343e4c;
+  width: 100%; }
+
+.uncompromising__heading {
+  margin-block: 2rem; }
+
+.uncompromising__image {
+  border-radius: 10px; }
 
 .how {
   margin-bottom: 7rem; }

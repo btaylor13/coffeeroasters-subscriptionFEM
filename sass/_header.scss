@@ -47,8 +47,8 @@
   &__intro {
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 0.625rem;
     &--home {
-      border-radius: 0.625rem;
       background-image: url(../assets/home/desktop/image-hero-coffeepress.jpg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -64,10 +64,20 @@
     &-text-content {
       padding: 4.2rem 2.8rem;
       width: 60%;
+
+      &--about {
+        max-width: 31rem;
+        width: 100%;
+        padding: 6.5rem 0 7rem 4.5rem;
+      }
     }
 
     &-heading-1 {
       color: $color-cream-light;
+
+      &--about {
+        margin-bottom: 1.9rem;
+      }
     }
 
     &-description {
@@ -100,6 +110,10 @@
       &-text-content {
         padding: 4.2rem 2.8rem;
         width: 75%;
+
+        &--about {
+          width: 71%;
+        }
       }
     }
   }
@@ -125,6 +139,11 @@
         padding: 4.2rem 0.4rem;
         width: 100%;
         text-align: center;
+
+        &--about {
+          width: 90%;
+          margin: 0 auto;
+        }
       }
     }
 

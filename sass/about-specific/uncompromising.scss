@@ -1,0 +1,28 @@
+// UNCOMPROMISING SECTION
+
+.uncompromising {
+  &__text {
+    color: $color-cream-light;
+    border-radius: 10px;
+    background-color: $color-bluegrey-dark;
+    width: 100%;
+  }
+
+  &__heading {
+    margin-block: 2rem;
+  }
+
+  &__paragraph {
+  }
+
+  &__picture {
+  }
+
+  &__image {
+    border-radius: 10px;
+  }
+}
+
+// UNCOMPROMISING MEDIA QUERIES TABLET
+
+// UNCOMPROMISING MEDIA QUERIES MOBILE

@@ -1,0 +1,79 @@
+// OUR COMMITMENT SECTION
+
+.commitment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-column-gap: 3rem;
+
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  &__image {
+    border-radius: 10px;
+    max-height: 32.5rem;
+  }
+
+  &__text {
+    color: $color-bluegrey-dark;
+  }
+
+  &__heading {
+    margin-bottom: 1.5rem;
+  }
+
+  &__paragraph {
+  }
+}
+
+// OUR COMMITMENT MEDIA QUERIES TABLET
+
+@media only screen and (max-width: 46rem) {
+  .commitment {
+    &__image {
+      max-height: 29.375rem;
+    }
+
+    &__text {
+      color: $color-bluegrey-dark;
+    }
+
+    &__heading {
+    }
+
+    &__paragraph {
+    }
+  }
+}
+
+// OUR COMMITMENT MEDIA QUERIES MOBILE
+@media only screen and (max-width: 36rem) {
+  .commitment {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+
+    &__picture {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__image {
+      max-height: 25rem;
+    }
+
+    &__text {
+      color: $color-bluegrey-dark;
+      text-align: center;
+    }
+
+    &__heading {
+      margin-block: 2.3rem;
+    }
+  }
+}

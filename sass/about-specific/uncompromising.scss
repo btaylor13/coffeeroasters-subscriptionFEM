@@ -1,11 +1,16 @@
 // UNCOMPROMISING SECTION
+//  SET UP AS A GRID INSTEAD TO MAKE IT MORE EASILY RESPONSIVE!!!!
 
 .uncompromising {
+  position: relative;
+  &__textbox-container {
+    padding: 3rem 0 10rem 3.7rem;
+    background-color: $color-bluegrey-dark;
+    border-radius: 10px;
+  }
   &__text {
     color: $color-cream-light;
-    border-radius: 10px;
-    background-color: $color-bluegrey-dark;
-    width: 100%;
+    width: 50%;
   }
 
   &__heading {
@@ -20,6 +25,9 @@
 
   &__image {
     border-radius: 10px;
+    position: absolute;
+    top: -6rem;
+    right: 4rem;
   }
 }
 

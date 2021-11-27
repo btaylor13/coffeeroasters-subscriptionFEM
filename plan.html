@@ -1,120 +1,256 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <title>Frontend Mentor | Coffeeroasters subscription site</title>
-</head>
+    <!-- Google Fonts Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=Fraunces:wght@500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  Home
-  About us
-  Create your plan
+    <!-- Custom Stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Scripts -->
+    <script src="navigation.js" defer></script>
 
-  Create a plan
-  Build a subscription plan that best fits your needs. We offer an assortment of the best 
-  artisan coffees from around the globe delivered fresh to your door.
+    <title>Frontend Mentor | Coffeeroasters subscription site</title>
+  </head>
+  <body>
+    <div id="plan-container" class="container">
+      <!-- Header -->
+      <header class="header--plan">
+        <!-- Navigation -->
+        <nav class="header__nav">
+          <div class="header__logo-container">
+            <!-- Logo -->
+            <a href="index.html" class="header__logo-link">
+              <img
+                src="assets/shared/desktop/logo.svg"
+                alt="logo"
+                class="header__logo"
+              />
+            </a>
+          </div>
+          <!-- Navigation Menu -->
+          <ul class="header__nav-menu">
+            <li class="header__nav-item">
+              <a href="index.html" class="header__nav-link nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="about.html" class="header__nav-link nav-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link nav-link">Create Your Plan</a>
+            </li>
+          </ul>
+          <!-- Hamburger SVG -->
+          <div class="header__hamburger">
+            <span class="header__hamburger-bar"></span>
+            <span class="header__hamburger-bar"></span>
+            <span class="header__hamburger-bar"></span>
+          </div>
+        </nav>
+        <!-- Intro/Hero Section -->
+        <section class="header__intro header__intro--plan">
+          <div
+            class="header__intro-text-content header__intro-text-content--plan"
+          >
+            <h1
+              class="
+                header__intro-heading-1
+                heading-1
+                mb-1
+                header__intro-heading-1--about
+              "
+            >
+              Create a plan
+            </h1>
+            <p class="header__intro-description body-text mb-3">
+              Build a subscription plan that best fits your needs. We offer an
+              assortment of the best artisan coffees from around the globe
+              delivered fresh to your door.
+            </p>
+          </div>
+        </section>
 
-  01
-  Pick your coffee
-  Select from our evolving range of artisan coffees. Our beans are ethically
-  sourced and we pay fair prices for them. There's new coffees in all profiles
-  every month for you to try out.
-  
-  02
-  Choose the frequency
-  Customize your order frequency, quantity, even your roast style and grind type.
-  Pause, skip or cancel your subscription with no commitment through our online portal.
-  
-  03
-  Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-  world-class coffees curated to provide a distinct tasting experience.
+        <!-- HOW IT WORKS SECTION -->
+        <section class="how how--plan">
+          <!-- HOW STEPS CONTAINER -->
+          <div class="how__steps-container">
+            <!-- STEP 01 -->
+            <div class="how__item how__item--1">
+              <div class="how__line-decor">
+                <div class="how__line how__line--1"></div>
+                <div class="how__circle-shape"></div>
+              </div>
+              <span class="how__item-number">01</span>
+              <h3 class="how__item-heading heading-3 how__item-heading--plan">
+                Pick your coffee
+              </h3>
+              <p
+                class="
+                  how__item-description
+                  body-text
+                  how__item-description--plan
+                "
+              >
+                Select from our evolving range of artisan coffees. Our beans are
+                ethically sourced and we pay fair prices for them. There are new
+                coffees in all profiles every month for you to try out.
+              </p>
+            </div>
+            <!-- STEP 02 -->
+            <div class="how__item">
+              <div class="how__line-decor">
+                <div class="how__line how__line--2"></div>
+                <div class="how__circle-shape"></div>
+              </div>
+              <span class="how__item-number">02</span>
+              <h3 class="how__item-heading heading-3 how__item-heading--plan">
+                Choose the frequency
+              </h3>
+              <p
+                class="
+                  how__item-description
+                  body-text
+                  how__item-description--plan
+                "
+              >
+                Customize your order frequency, quantity, even your roast style
+                and grind type. Pause, skip, or cancel your subscription with no
+                commitment through our online portal.
+              </p>
+            </div>
+            <!-- STEP 03 -->
+            <div class="how__item">
+              <div class="how__line-decor">
+                <div class="how__line how__line--3"></div>
+                <div class="how__circle-shape"></div>
+              </div>
+              <span class="how__item-number">03</span>
+              <h3 class="how__item-heading heading-3 how__item-heading--plan">
+                Receive and enjoy!
+              </h3>
+              <p
+                class="
+                  how__item-description
+                  body-text
+                  how__item-description--plan
+                "
+              >
+                We ship your package within 48 hours, freshly roasted. Sit back
+                and enjoy award-winning world-class coffees curated to provide a
+                distinct tasting experience.
+              </p>
+            </div>
+          </div>
+        </section>
 
-  01 Preferences
-  02 Bean type
-  03 Quantity
-  04 Grind option
-  05 Deliveries
+        <!-- FOOTER SECTION -->
 
-  How do you drink your coffee?
+        <footer class="footer">
+          <div class="footer__navigation">
+            <div class="footer__logo-container">
+              <img
+                src="assets/shared/desktop/logo-footer.svg"
+                alt="logo"
+                class="footer__logo"
+              />
+            </div>
+            <ul class="footer__nav-menu">
+              <li class="footer__nav-item">
+                <a href="index.html" class="footer__nav-link">Home</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">About Us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="plan.html" class="footer__nav-link"
+                  >Create Your Plan</a
+                >
+              </li>
+            </ul>
+          </div>
 
-  Capsule
-  Compatible with Nespresso systems and similar brewers
+          <div class="footer__social">
+            <!-- facebook icon -->
+            <div class="footer__social-icon-container">
+              <a href="https://www.facebook.com/" class="footer__social-link"
+                ><img
+                  src="assets/shared/desktop/icon-facebook.svg"
+                  alt="Facebook icon"
+                  class="footer__social-icon"
+              /></a>
+            </div>
+            <!-- twitter icon -->
+            <div class="footer__social-icon-container">
+              <a href="https://www.twitter.com/" class="footer__social-link"
+                ><img
+                  src="assets/shared/desktop/icon-twitter.svg"
+                  alt="Facebook icon"
+                  class="footer__social-icon"
+              /></a>
+            </div>
 
-  Filter
-  For pour over or drip methods like Aeropress, Chemex, and V60
+            <!-- instagram icon -->
+            <div class="footer__social-icon-container">
+              <a href="instagram.com" class="footer__social-link"
+                ><img
+                  src="assets/shared/desktop/icon-instagram.svg"
+                  alt="Facebook icon"
+                  class="footer__social-icon"
+              /></a>
+            </div>
+          </div>
+        </footer>
+      </header>
+      01 Pick your coffee Select from our evolving range of artisan coffees. Our
+      beans are ethically sourced and we pay fair prices for them. There's new
+      coffees in all profiles every month for you to try out. 02 Choose the
+      frequency Customize your order frequency, quantity, even your roast style
+      and grind type. Pause, skip or cancel your subscription with no commitment
+      through our online portal. 03 Receive and enjoy! We ship your package
+      within 48 hours, freshly roasted. Sit back and enjoy award-winning
+      world-class coffees curated to provide a distinct tasting experience. 01
+      Preferences 02 Bean type 03 Quantity 04 Grind option 05 Deliveries How do
+      you drink your coffee? Capsule Compatible with Nespresso systems and
+      similar brewers Filter For pour over or drip methods like Aeropress,
+      Chemex, and V60 Espresso Dense and finely ground beans for an intense,
+      flavorful experience What type of coffee? Single origin Distinct, high
+      quality coffee from a specific family-owned farm Decaf Just like regular
+      coffee, except the caffeine has been removed Blended Combination of two or
+      three dark roasted beans of organic coffees How much would you like? 250g
+      Perfect for the solo drinker. Yields about 12 delicious cups. 500g Perfect
+      option for a couple. Yields about 40 delectable cups. 1000g Perfect for
+      offices and events. Yields about 90 delightful cups. Want us to grind
+      them? Wholebean Best choice if you cherish the full sensory experience
+      Filter For drip or pour-over coffee methods such as V60 or Aeropress
+      Cafetiére Course ground beans specially suited for french press coffee How
+      often should we deliver? Every week $14.00 per shipment. Includes free
+      first-class shipping. Every 2 weeks $17.25 per shipment. Includes free
+      priority shipping. Every month $22.50 per shipment. Includes free priority
+      shipping. Order Summary “I drink coffee _____, with a _____ type of bean.
+      _____ ground ala _____, sent to me _____.” Create my plan!
 
-  Espresso
-  Dense and finely ground beans for an intense, flavorful experience
+      <!-- Modal -->
+      Order Summary “I drink coffee _____, with a _____ type of bean. _____
+      ground ala _____, sent to me _____.” Is this correct? You can proceed to
+      checkout or go back to plan selection if something is off. Subscription
+      discount codes can also be redeemed at the checkout. $_____/month Checkout
+      <!-- End modal -->
 
-  What type of coffee?
-
-  Single origin
-  Distinct, high quality coffee from a specific family-owned farm
-
-  Decaf
-  Just like regular coffee, except the caffeine has been removed
-
-  Blended
-  Combination of two or three dark roasted beans of organic coffees
-
-  How much would you like?
-  250g
-  Perfect for the solo drinker. Yields about 12 delicious cups.
-  
-  500g
-  Perfect option for a couple. Yields about 40 delectable cups.
-
-  1000g
-  Perfect for offices and events. Yields about 90 delightful cups.
-
-  Want us to grind them?
-
-  Wholebean
-  Best choice if you cherish the full sensory experience
-
-  Filter
-  For drip or pour-over coffee methods such as V60 or Aeropress
-
-  Cafetiére
-  Course ground beans specially suited for french press coffee
-
-  How often should we deliver?
-
-  Every week
-  $14.00 per shipment. Includes free first-class shipping.
-
-  Every 2 weeks
-  $17.25 per shipment. Includes free priority shipping.
-
-  Every month
-  $22.50 per shipment. Includes free priority shipping.
-
-  Order Summary
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
-  sent to me _____.”
-
-  Create my plan!
-
-  <!-- Modal -->
-  Order Summary
-
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-  sent to me _____.”
-
-  Is this correct? You can proceed to checkout or go back to plan selection if something 
-  is off. Subscription discount codes can also be redeemed at the checkout.
-
-  $_____/month
-
-  Checkout
-  <!-- End modal -->
-
-  Home
-  About us
-  Create your plan
-</body>
-
+      Home About us Create your plan
+    </div>
+  </body>
 </html>

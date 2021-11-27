@@ -6,6 +6,10 @@
 .how {
   max-width: 65rem;
   margin: 0 auto;
+
+  &--plan {
+    background: $color-bluegrey-dark;
+  }
   &__heading {
     color: $color-grey;
     margin-top: 3rem;

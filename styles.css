@@ -481,6 +481,8 @@ body {
 .how {
   max-width: 65rem;
   margin: 0 auto; }
+  .how--plan {
+    background: #343e4c; }
   .how__heading {
     color: #848990;
     margin-top: 3rem;

@@ -1,0 +1,48 @@
+.create__accordion {
+  &-container {
+  }
+
+  &-item {
+    &-btn {
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background-color: inherit;
+      padding-block: 1rem;
+      cursor: pointer;
+    }
+
+    &-heading {
+      color: $color-grey;
+    }
+
+    &-options {
+      display: flex;
+      column-gap: 1rem;
+    }
+
+    &-option {
+      background-color: $color-grey-light;
+      color: $color-bluegrey-dark;
+      padding: 1rem 1rem 3rem 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        background-color: $color-orange-pale;
+      }
+
+      &-heading {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// TABLET MEDIA QUERIES
+
+// MOBILE MEDIA QUERIES

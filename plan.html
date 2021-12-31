@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles.css" />
     <!-- Scripts -->
     <script src="navigation.js" defer></script>
+    <script src="create-plan.js" defer></script>
 
     <title>Frontend Mentor | Coffeeroasters subscription site</title>
   </head>
@@ -83,147 +84,232 @@
             </p>
           </div>
         </section>
-
-        <!-- HOW IT WORKS SECTION -->
-        <section class="how how--plan">
-          <!-- HOW STEPS CONTAINER -->
-          <div class="how__steps-container">
-            <!-- STEP 01 -->
-            <div class="how__item how__item--1">
-              <div class="how__line-decor">
-                <div class="how__line how__line--1"></div>
-                <div class="how__circle-shape"></div>
-              </div>
-              <span class="how__item-number">01</span>
-              <h3 class="how__item-heading heading-3 how__item-heading--plan">
-                Pick your coffee
-              </h3>
-              <p
-                class="
-                  how__item-description
-                  body-text
-                  how__item-description--plan
-                "
-              >
-                Select from our evolving range of artisan coffees. Our beans are
-                ethically sourced and we pay fair prices for them. There are new
-                coffees in all profiles every month for you to try out.
-              </p>
-            </div>
-            <!-- STEP 02 -->
-            <div class="how__item">
-              <div class="how__line-decor">
-                <div class="how__line how__line--2"></div>
-                <div class="how__circle-shape"></div>
-              </div>
-              <span class="how__item-number">02</span>
-              <h3 class="how__item-heading heading-3 how__item-heading--plan">
-                Choose the frequency
-              </h3>
-              <p
-                class="
-                  how__item-description
-                  body-text
-                  how__item-description--plan
-                "
-              >
-                Customize your order frequency, quantity, even your roast style
-                and grind type. Pause, skip, or cancel your subscription with no
-                commitment through our online portal.
-              </p>
-            </div>
-            <!-- STEP 03 -->
-            <div class="how__item">
-              <div class="how__line-decor">
-                <div class="how__line how__line--3"></div>
-                <div class="how__circle-shape"></div>
-              </div>
-              <span class="how__item-number">03</span>
-              <h3 class="how__item-heading heading-3 how__item-heading--plan">
-                Receive and enjoy!
-              </h3>
-              <p
-                class="
-                  how__item-description
-                  body-text
-                  how__item-description--plan
-                "
-              >
-                We ship your package within 48 hours, freshly roasted. Sit back
-                and enjoy award-winning world-class coffees curated to provide a
-                distinct tasting experience.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- FOOTER SECTION -->
-
-        <footer class="footer">
-          <div class="footer__navigation">
-            <div class="footer__logo-container">
-              <a href="index.html" class="footer__logo-link"
-                ><img
-                  src="assets/shared/desktop/logo-footer.svg"
-                  alt="logo"
-                  class="footer__logo"
-              /></a>
-            </div>
-            <ul class="footer__nav-menu">
-              <li class="footer__nav-item">
-                <a href="index.html" class="footer__nav-link">Home</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="about.html" class="footer__nav-link">About Us</a>
-              </li>
-              <li class="footer__nav-item">
-                <a href="#" class="footer__nav-link">Create Your Plan</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footer__social">
-            <!-- facebook icon -->
-            <div class="footer__social-icon-container">
-              <a href="https://www.facebook.com/" class="footer__social-link"
-                ><img
-                  src="assets/shared/desktop/icon-facebook.svg"
-                  alt="Facebook icon"
-                  class="footer__social-icon"
-              /></a>
-            </div>
-            <!-- twitter icon -->
-            <div class="footer__social-icon-container">
-              <a href="https://www.twitter.com/" class="footer__social-link"
-                ><img
-                  src="assets/shared/desktop/icon-twitter.svg"
-                  alt="Facebook icon"
-                  class="footer__social-icon"
-              /></a>
-            </div>
-
-            <!-- instagram icon -->
-            <div class="footer__social-icon-container">
-              <a href="instagram.com" class="footer__social-link"
-                ><img
-                  src="assets/shared/desktop/icon-instagram.svg"
-                  alt="Facebook icon"
-                  class="footer__social-icon"
-              /></a>
-            </div>
-          </div>
-        </footer>
       </header>
-      01 Pick your coffee Select from our evolving range of artisan coffees. Our
-      beans are ethically sourced and we pay fair prices for them. There's new
-      coffees in all profiles every month for you to try out. 02 Choose the
-      frequency Customize your order frequency, quantity, even your roast style
-      and grind type. Pause, skip or cancel your subscription with no commitment
-      through our online portal. 03 Receive and enjoy! We ship your package
-      within 48 hours, freshly roasted. Sit back and enjoy award-winning
-      world-class coffees curated to provide a distinct tasting experience. 01
-      Preferences 02 Bean type 03 Quantity 04 Grind option 05 Deliveries How do
-      you drink your coffee? Capsule Compatible with Nespresso systems and
+
+      <!-- HOW IT WORKS SECTION -->
+      <section class="how how--plan">
+        <!-- HOW STEPS CONTAINER -->
+        <div class="how__steps-container">
+          <!-- STEP 01 -->
+          <div class="how__item how__item--1">
+            <div class="how__line-decor">
+              <div class="how__line how__line--1"></div>
+              <div class="how__circle-shape"></div>
+            </div>
+            <span class="how__item-number">01</span>
+            <h3 class="how__item-heading heading-3 how__item-heading--plan">
+              Pick your coffee
+            </h3>
+            <p
+              class="
+                how__item-description
+                body-text
+                how__item-description--plan
+              "
+            >
+              Select from our evolving range of artisan coffees. Our beans are
+              ethically sourced and we pay fair prices for them. There are new
+              coffees in all profiles every month for you to try out.
+            </p>
+          </div>
+          <!-- STEP 02 -->
+          <div class="how__item">
+            <div class="how__line-decor">
+              <div class="how__line how__line--2"></div>
+              <div class="how__circle-shape"></div>
+            </div>
+            <span class="how__item-number">02</span>
+            <h3 class="how__item-heading heading-3 how__item-heading--plan">
+              Choose the frequency
+            </h3>
+            <p
+              class="
+                how__item-description
+                body-text
+                how__item-description--plan
+              "
+            >
+              Customize your order frequency, quantity, even your roast style
+              and grind type. Pause, skip, or cancel your subscription with no
+              commitment through our online portal.
+            </p>
+          </div>
+          <!-- STEP 03 -->
+          <div class="how__item">
+            <div class="how__line-decor">
+              <div class="how__line how__line--3"></div>
+              <div class="how__circle-shape"></div>
+            </div>
+            <span class="how__item-number">03</span>
+            <h3 class="how__item-heading heading-3 how__item-heading--plan">
+              Receive and enjoy!
+            </h3>
+            <p
+              class="
+                how__item-description
+                body-text
+                how__item-description--plan
+              "
+            >
+              We ship your package within 48 hours, freshly roasted. Sit back
+              and enjoy award-winning world-class coffees curated to provide a
+              distinct tasting experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEGIN CREATE YOUR PLAN SECTION -->
+      <section class="create">
+        <!-- SIDBAR (ONLY VISIBLE ON DESKTOP SIZE) -->
+        <ul class="create__sidebar">
+          <li class="create__sidebar-option" id="li-preferences">
+            <span class="create__sidebar-option-num">01</span>
+            <span class="create__sidebar-option-title">Preferences</span>
+          </li>
+          <li class="create__sidebar-option" id="li-bean-type">
+            <span class="create__sidebar-option-num">02</span>
+            <span class="create__sidebar-option-title">Bean Type</span>
+          </li>
+          <li class="create__sidebar-option" id="li-quantity">
+            <span class="create__sidebar-option-num">03</span>
+            <span class="create__sidebar-option-title">Quantity</span>
+          </li>
+          <li class="create__sidebar-option" id="li-grind">
+            <span class="create__sidebar-option-num">04</span>
+            <span class="create__sidebar-option-title">Grind Option</span>
+          </li>
+          <li class="create__sidebar-option" id="li-delivery">
+            <span class="create__sidebar-option-num">05</span>
+            <span class="create__sidebar-option-title">Deliveries</span>
+          </li>
+        </ul>
+        <!-- END OF SIDEBAR -->
+        <!-- ACCORDION BEGINS -->
+        <div class="create__accordion-container">
+          <div class="create__accordion" id="accordion">
+            <!-- Question #1 - How do you drink your coffee? -->
+            <div class="create__accordion-item">
+              <button
+                class="heading-3 create__accordion-item-btn"
+                value="preferences"
+              >
+                <h3 class="create__accordion-item-heading heading-3">
+                  How do you drink your coffee?
+                </h3>
+                <img
+                  src="assets/plan/desktop/icon-arrow.svg"
+                  alt="arrow"
+                  class="create__accordion-item-heading-arrow"
+                />
+              </button>
+
+              <div class="create__accordion-item-options" id="item1">
+                <!-- option -->
+                <button class="create__accordion-item-option" value="capsule">
+                  <h4 class="create__accordion-item-option-heading heading-4">
+                    Capsule
+                  </h4>
+                  <p
+                    class="create__accordion-item-option-description body-text"
+                  >
+                    Compatible with Nespresso systems and similar brewers
+                  </p>
+                </button>
+                <!-- option -->
+                <button class="create__accordion-item-option" value="filter">
+                  <h4 class="create__accordion-item-option-heading heading-4">
+                    Filter
+                  </h4>
+                  <p
+                    class="create__accordion-item-option-description body-text"
+                  >
+                    For pour over or drip methods like Aeropress, Chemex, and
+                    V60
+                  </p>
+                </button>
+                <!-- option -->
+                <button class="create__accordion-item-option" value="espresso">
+                  <h4 class="create__accordion-item-option-heading heading-4">
+                    Espresso
+                  </h4>
+                  <p
+                    class="create__accordion-item-option-description body-text"
+                  >
+                    Dense and finely ground beans for an intense, flavorful
+                    experience
+                  </p>
+                </button>
+              </div>
+            </div>
+
+            <!-- Question #2: What type of coffee? -->
+            <!-- Question #3: How much would you like? -->
+            <!-- Question #4: Want us to grind them? -->
+            <!-- Question #5: How often should we deliver? -->
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER SECTION -->
+
+      <footer class="footer">
+        <div class="footer__navigation">
+          <div class="footer__logo-container">
+            <a href="index.html" class="footer__logo-link"
+              ><img
+                src="assets/shared/desktop/logo-footer.svg"
+                alt="logo"
+                class="footer__logo"
+            /></a>
+          </div>
+          <ul class="footer__nav-menu">
+            <li class="footer__nav-item">
+              <a href="index.html" class="footer__nav-link">Home</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="about.html" class="footer__nav-link">About Us</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Create Your Plan</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__social">
+          <!-- facebook icon -->
+          <div class="footer__social-icon-container">
+            <a href="https://www.facebook.com/" class="footer__social-link"
+              ><img
+                src="assets/shared/desktop/icon-facebook.svg"
+                alt="Facebook icon"
+                class="footer__social-icon"
+            /></a>
+          </div>
+          <!-- twitter icon -->
+          <div class="footer__social-icon-container">
+            <a href="https://www.twitter.com/" class="footer__social-link"
+              ><img
+                src="assets/shared/desktop/icon-twitter.svg"
+                alt="Facebook icon"
+                class="footer__social-icon"
+            /></a>
+          </div>
+
+          <!-- instagram icon -->
+          <div class="footer__social-icon-container">
+            <a href="instagram.com" class="footer__social-link"
+              ><img
+                src="assets/shared/desktop/icon-instagram.svg"
+                alt="Facebook icon"
+                class="footer__social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+
+      01 Preferences 02 Bean type 03 Quantity 04 Grind option 05 Deliveries How
+      do you drink your coffee? Capsule Compatible with Nespresso systems and
       similar brewers Filter For pour over or drip methods like Aeropress,
       Chemex, and V60 Espresso Dense and finely ground beans for an intense,
       flavorful experience What type of coffee? Single origin Distinct, high
@@ -251,5 +337,12 @@
 
       Home About us Create your plan
     </div>
+    <!-- jquery cdn -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
